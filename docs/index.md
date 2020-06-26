@@ -24,7 +24,7 @@
 
 ---
 
-Typer is library for building <abbr title="command line interface, programs executed from a terminal">CLI</abbr> applications that users will **love using** and developers will **love creating**. Based on Python 3.6+ type hints.
+Typer is a library for building <abbr title="command line interface, programs executed from a terminal">CLI</abbr> applications that users will **love using** and developers will **love creating**. Based on Python 3.6+ type hints.
 
 The key features are:
 
@@ -99,12 +99,15 @@ $ python main.py --help
 
 Usage: main.py [OPTIONS] NAME
 
+Arguments:
+  NAME  [required]
+
 Options:
   --install-completion  Install completion for the current shell.
   --show-completion     Show completion for the current shell, to copy it or customize the installation.
   --help                Show this message and exit.
 
-// When you create a package you get ✨ auto completion ✨ for free, installed with --install-completion
+// When you create a package you get ✨ auto-completion ✨ for free, installed with --install-completion
 
 // Now pass the NAME argument
 $ python main.py Camila
@@ -116,7 +119,7 @@ Hello Camila
 
 </div>
 
-**Note**: Auto completion works when you create a Python package and run it with `--install-completion` or when you use <a href="https://typer.tiangolo.com/typer-cli/" class="internal-link" target="_blank">Typer CLI</a>.
+**Note**: auto-completion works when you create a Python package and run it with `--install-completion` or when you use <a href="https://typer.tiangolo.com/typer-cli/" class="internal-link" target="_blank">Typer CLI</a>.
 
 ## Example upgrade
 
@@ -187,6 +190,9 @@ $ python main.py hello --help
 
 Usage: main.py hello [OPTIONS] NAME
 
+Arguments:
+  NAME  [required]
+
 Options:
   --help  Show this message and exit.
 
@@ -196,8 +202,11 @@ $ python main.py goodbye --help
 
 Usage: main.py goodbye [OPTIONS] NAME
 
+Arguments:
+  NAME  [required]
+
 Options:
-  --formal / --no-formal
+  --formal / --no-formal  [default: False]
   --help                  Show this message and exit.
 
 // Automatic --formal and --no-formal for the bool option 🎉
@@ -249,7 +258,7 @@ And similarly for **files**, **paths**, **enums** (choices), etc. And there are 
 
 **You get**: great editor support, including **completion** and **type checks** everywhere.
 
-**Your users get**: automatic **`--help`**, **auto completion** in their terminal (Bash, Zsh, Fish, PowerShell) when they install your package or when using <a href="https://typer.tiangolo.com/typer-cli/" class="internal-link" target="_blank">Typer CLI</a>.
+**Your users get**: automatic **`--help`**, **auto-completion** in their terminal (Bash, Zsh, Fish, PowerShell) when they install your package or when using <a href="https://typer.tiangolo.com/typer-cli/" class="internal-link" target="_blank">Typer CLI</a>.
 
 For a more complete example including more features, see the <a href="https://typer.tiangolo.com/tutorial/">Tutorial - User Guide</a>.
 
