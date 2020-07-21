@@ -1,5 +1,15 @@
 ## Latest changes
 
+* Report coverage in XML to support GitHub Actions. PR [#146](https://github.com/tiangolo/typer/pull/146).
+* Update badges and remove Travis, now that GitHub Actions is the main CI. PR [#145](https://github.com/tiangolo/typer/pull/145).
+
+## 0.3.1
+
+* Add GitHub Actions, move from Travis. PR [#144](https://github.com/tiangolo/typer/pull/144).
+* Pin dependencies. PR [#138](https://github.com/tiangolo/typer/pull/138).
+* Add Dependabot. PR [#136](https://github.com/tiangolo/typer/pull/136).
+* Upgrade Isort to version 5.x.x. PR [#137](https://github.com/tiangolo/typer/pull/137).
+
 ## 0.3.0
 
 * Add support for `help` parameter in *CLI arguments*:

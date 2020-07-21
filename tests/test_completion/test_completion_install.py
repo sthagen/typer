@@ -7,7 +7,7 @@ import shellingham
 import typer
 from typer.testing import CliRunner
 
-from first_steps import tutorial001 as mod
+from docs_src.first_steps import tutorial001 as mod
 
 runner = CliRunner()
 app = typer.Typer()
@@ -65,6 +65,8 @@ def test_completion_install_bash():
 def test_completion_install_zsh():
     completion_path: Path = Path.home() / ".zshrc"
     text = ""
+    if not completion_path.is_file():  # pragma: nocover
+        completion_path.write_text('echo "custom .zshrc"')
     if completion_path.is_file():
         text = completion_path.read_text()
     result = subprocess.run(
