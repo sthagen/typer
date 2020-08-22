@@ -6,7 +6,10 @@ Your function will receive a standard Python `datetime` object, and again, your 
 {!../docs_src/parameter_types/datetime/tutorial001.py!}
 ```
 
-By default, it will expect a datetime in ISO format in the input.
+Typer will accept any string from the following formats:
+* `%Y-%m-%d`
+* `%Y-%m-%dT%H:%M:%S`
+* `%Y-%m%d %H:%M:%S`
 
 Check it:
 
@@ -15,7 +18,10 @@ Check it:
 ```console
 $ python main.py --help
 
-Usage: main.py [OPTIONS] [%Y-%m-%d|%Y-%m-%dT%H:%M:%S|%Y-%m-%d %H:%M:%S]
+Usage: main.py [OPTIONS] BIRTH:[%Y-%m-%d|%Y-%m-%dT%H:%M:%S|%Y-%m-%d %H:%M:%S]
+
+Arguments:
+  BIRTH:[%Y-%m-%d|%Y-%m-%dT%H:%M:%S|%Y-%m-%d %H:%M:%S][required]
 
 Options:
   --install-completion  Install completion for the current shell.

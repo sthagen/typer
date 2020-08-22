@@ -24,7 +24,7 @@ $ python main.py --help
 Usage: main.py [OPTIONS]
 
 Options:
-  --force
+  --force               [default: False]
   --install-completion  Install completion for the current shell.
   --show-completion     Show completion for the current shell, to copy it or customize the installation.
   --help                Show this message and exit.
@@ -60,7 +60,7 @@ We might want to instead have `--accept` and `--reject`.
 
 We can do that by passing a single `str` with the 2 names for the `bool` *CLI option* separated by `/`:
 
-```Python hl_lines="4"
+```Python hl_lines="6"
 {!../docs_src/parameter_types/bool/tutorial002.py!}
 ```
 
@@ -121,7 +121,7 @@ $ python main.py --help
 Usage: main.py [OPTIONS]
 
 Options:
-  -f, --force / -F, --no-force
+  -f, --force / -F, --no-force  [default: False]
   --install-completion          Install completion for the current shell.
   --show-completion             Show completion for the current shell, to copy it or customize the installation.
   --help                        Show this message and exit.
@@ -166,7 +166,7 @@ $ python main.py --help
 Usage: main.py [OPTIONS]
 
 Options:
-   / -d, --demo
+   / -d, --demo         [default: True]
   --install-completion  Install completion for the current shell.
   --show-completion     Show completion for the current shell, to copy it or customize the installation.
   --help                Show this message and exit.
