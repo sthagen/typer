@@ -1,5 +1,14 @@
 ## Latest Changes
 
+
+## 0.5.0
+
+### Features
+
+* ✨ Add pretty error tracebacks for user errors and support for Rich. PR [#412](https://github.com/tiangolo/typer/pull/412) by [@tiangolo](https://github.com/tiangolo).
+
+### Docs
+
 * ✏ Fix typo, "ASCII codes" to "ANSI escape sequences". PR [#308](https://github.com/tiangolo/typer/pull/308) by [@septatrix](https://github.com/septatrix).
 
 ## 0.4.2
