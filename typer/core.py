@@ -36,7 +36,7 @@ try:
 
     from . import rich_utils
 
-except ImportError:  # pragma: nocover
+except ImportError:  # pragma: no cover
     rich = None  # type: ignore
 
 MarkupMode = Literal["markdown", "rich", None]
@@ -77,14 +77,15 @@ def _typer_param_setup_autocompletion_compat(
 
             out = []
 
-            for c in autocompletion(ctx, [], incomplete):  # type: ignore
+            for c in autocompletion(ctx, [], incomplete):
                 if isinstance(c, tuple):
-                    c = CompletionItem(c[0], help=c[1])
-                elif isinstance(c, str):
-                    c = CompletionItem(c)
+                    use_completion = CompletionItem(c[0], help=c[1])
+                else:
+                    assert isinstance(c, str)
+                    use_completion = CompletionItem(c)
 
-                if c.value.startswith(incomplete):
-                    out.append(c)
+                if use_completion.value.startswith(incomplete):
+                    out.append(use_completion)
 
             return out
 
@@ -200,9 +201,9 @@ def _main(
                 # even always obvious that `rv` indicates success/failure
                 # by its truthiness/falsiness
                 ctx.exit()
-        except (EOFError, KeyboardInterrupt):
+        except (EOFError, KeyboardInterrupt) as e:
             click.echo(file=sys.stderr)
-            raise click.Abort()
+            raise click.Abort() from e
         except click.ClickException as e:
             if not standalone_mode:
                 raise
@@ -370,7 +371,7 @@ class TyperArgument(click.core.Argument):
             return self.metavar
         var = (self.name or "").upper()
         if not self.required:
-            var = "[{}]".format(var)
+            var = f"[{var}]"
         type_var = self.type.get_metavar(self)
         if type_var:
             var += f":{type_var}"

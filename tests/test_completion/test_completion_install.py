@@ -18,8 +18,7 @@ app.command()(mod.main)
 def test_completion_install_no_shell():
     result = subprocess.run(
         [sys.executable, "-m", "coverage", "run", mod.__file__, "--install-completion"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
+        capture_output=True,
         encoding="utf-8",
         env={
             **os.environ,
@@ -45,8 +44,7 @@ def test_completion_install_bash():
             "--install-completion",
             "bash",
         ],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
+        capture_output=True,
         encoding="utf-8",
         env={
             **os.environ,
@@ -74,7 +72,7 @@ def test_completion_install_bash():
 def test_completion_install_zsh():
     completion_path: Path = Path.home() / ".zshrc"
     text = ""
-    if not completion_path.is_file():  # pragma: nocover
+    if not completion_path.is_file():  # pragma: no cover
         completion_path.write_text('echo "custom .zshrc"')
     if completion_path.is_file():
         text = completion_path.read_text()
@@ -88,8 +86,7 @@ def test_completion_install_zsh():
             "--install-completion",
             "zsh",
         ],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
+        capture_output=True,
         encoding="utf-8",
         env={
             **os.environ,
@@ -125,8 +122,7 @@ def test_completion_install_fish():
             "--install-completion",
             "fish",
         ],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
+        capture_output=True,
         encoding="utf-8",
         env={
             **os.environ,
@@ -148,11 +144,11 @@ app.command()(mod.main)
 
 def test_completion_install_powershell():
     completion_path: Path = (
-        Path.home() / f".config/powershell/Microsoft.PowerShell_profile.ps1"
+        Path.home() / ".config/powershell/Microsoft.PowerShell_profile.ps1"
     )
     completion_path_bytes = f"{completion_path}\n".encode("windows-1252")
     text = ""
-    if completion_path.is_file():  # pragma: nocover
+    if completion_path.is_file():  # pragma: no cover
         text = completion_path.read_text()
 
     with mock.patch.object(
