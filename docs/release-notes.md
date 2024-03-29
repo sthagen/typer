@@ -1,5 +1,15 @@
 ## Latest Changes
 
+## 0.11.1
+
+### Fixes
+
+* 🔧 Explicitly include testing files in sdist for redistributors (e.g. OpenSUSE) and add CI to test redistribution. PR [#773](https://github.com/tiangolo/typer/pull/773) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* 👷 Do not use the cache for dependencies when publishing to PyPI. PR [#774](https://github.com/tiangolo/typer/pull/774) by [@tiangolo](https://github.com/tiangolo).
+
 ## 0.11.0
 
 ### Breaking Changes
