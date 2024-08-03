@@ -1,3 +1,4 @@
+INHERIT: ./mkdocs.maybe-insiders.yml
 site_name: Typer
 site_description: Typer, build great CLIs. Easy to code. Based on Python type hints.
 site_url: https://typer.tiangolo.com/
@@ -6,11 +7,21 @@ theme:
   name: material
   custom_dir: docs/overrides
   palette:
+  - scheme: default
     primary: black
     accent: teal
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+  - scheme: slate
+    primary: black
+    accent: teal
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to light mode
   icon:
     repo: fontawesome/brands/github-alt
-  logo: img/icon-white.svg
+  logo: img/icon.svg
   favicon: img/favicon.png
 
 repo_name: tiangolo/typer
@@ -136,6 +147,5 @@ extra_css:
   - css/custom.css
 
 extra_javascript:
-  - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
   - js/termynal.js
   - js/custom.js
