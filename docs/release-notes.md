@@ -6,6 +6,10 @@
 
 ### Internal
 
+* 🔧 Enable auto dark mode from system. PR [#908](https://github.com/tiangolo/typer/pull/908) by [@tiangolo](https://github.com/tiangolo).
+* 💄 Add dark mode logo. PR [#907](https://github.com/tiangolo/typer/pull/907) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Update tabs and admonitions with new syntax and new MkDocs features. PR [#906](https://github.com/tiangolo/typer/pull/906) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Enable MkDocs Material features. PR [#905](https://github.com/tiangolo/typer/pull/905) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Enable dark mode for docs. PR [#904](https://github.com/tiangolo/typer/pull/904) by [@tiangolo](https://github.com/tiangolo).
 * ➖ Do not install jieba for MkDocs Material as there are no chinese translations. PR [#903](https://github.com/tiangolo/typer/pull/903) by [@tiangolo](https://github.com/tiangolo).
 * 🙈 Add MkDocs Material cache to gitignore. PR [#902](https://github.com/tiangolo/typer/pull/902) by [@tiangolo](https://github.com/tiangolo).
