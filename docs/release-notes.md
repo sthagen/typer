@@ -2,8 +2,14 @@
 
 ## Latest Changes
 
+### Docs
+
+* ✏️ Fix typo in `docs/contributing.md`. PR [#947](https://github.com/fastapi/typer/pull/947) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Add docs for virtual environments, environment variables, and update contributing. PR [#946](https://github.com/fastapi/typer/pull/946) by [@tiangolo](https://github.com/tiangolo).
+
 ### Internal
 
+* 👷 Fix issue-manager. PR [#948](https://github.com/fastapi/typer/pull/948) by [@tiangolo](https://github.com/tiangolo).
 * 🙈 Remove extra line in .gitignore. PR [#936](https://github.com/fastapi/typer/pull/936) by [@tiangolo](https://github.com/tiangolo).
 * ⬆ Update pytest-cov requirement from <5.0.0,>=2.10.0 to >=2.10.0,<6.0.0. PR [#844](https://github.com/fastapi/typer/pull/844) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.8.11 to 1.9.0. PR [#865](https://github.com/fastapi/typer/pull/865) by [@dependabot[bot]](https://github.com/apps/dependabot).
