@@ -2,8 +2,67 @@
 
 ## Latest Changes
 
+## 0.14.0
+
+### Breaking Changes
+
+* 🔥 Remove auto naming of groups added via `add_typer` based on the group's callback function name. PR [#1052](https://github.com/fastapi/typer/pull/1052) by [@patrick91](https://github.com/patrick91).
+
+Before, it was supported to infer the name of a command group from the callback function name in the sub-app, so, in this code:
+
+```python
+import typer
+
+app = typer.Typer()
+users_app = typer.Typer()
+
+app.add_typer(users_app)
+
+
+@users_app.callback()
+def users():  # <-- This was the inferred command group name
+    """
+    Manage users in the app.
+    """
+
+
+@users_app.command()
+def create(name: str):
+    print(f"Creating user: {name}")
+```
+
+...the command group would be named `users`, based on the name of the function `def users()`.
+
+Now you need to set it explicitly:
+
+```python
+import typer
+
+app = typer.Typer()
+users_app = typer.Typer()
+
+app.add_typer(users_app, name="users")  # <-- Explicitly set the command group name
+
+
+@users_app.callback()
+def users():
+    """
+    Manage users in the app.
+    """
+
+
+@users_app.command()
+def create(name: str):
+    print(f"Creating user: {name}")
+```
+
+Updated docs [SubCommand Name and Help](https://typer.tiangolo.com/tutorial/subcommands/name-and-help/).
+
+**Note**: this change will enable important features in the next release. 🤩
+
 ### Internal
 
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.10.3 to 1.12.2. PR [#1043](https://github.com/fastapi/typer/pull/1043) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump mkdocs-material from 9.5.44 to 9.5.46. PR [#1062](https://github.com/fastapi/typer/pull/1062) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump ruff from 0.7.4 to 0.8.0. PR [#1059](https://github.com/fastapi/typer/pull/1059) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump astral-sh/setup-uv from 3 to 4. PR [#1061](https://github.com/fastapi/typer/pull/1061) by [@dependabot[bot]](https://github.com/apps/dependabot).
