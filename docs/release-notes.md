@@ -2,6 +2,22 @@
 
 ## Latest Changes
 
+### Refactors
+
+* 🚚 Rename test to corner-cases to make it more explicit. PR [#1083](https://github.com/fastapi/typer/pull/1083) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.15.1
+
+### Features
+
+* 🗑️ Deprecate `shell_complete` and continue to use `autocompletion` for CLI parameters. PR [#974](https://github.com/fastapi/typer/pull/974) by [@svlandeg](https://github.com/svlandeg).
+
+### Docs
+
+* ✏️ Fix a few typos in the source and documentation. PR [#1028](https://github.com/fastapi/typer/pull/1028) by [@kkirsche](https://github.com/kkirsche).
+* 📝 Fix minor inconsistencies and typos in tutorial. PR [#1067](https://github.com/fastapi/typer/pull/1067) by [@tvoirand](https://github.com/tvoirand).
+* ✏️ Fix a few small typos in the documentation. PR [#1077](https://github.com/fastapi/typer/pull/1077) by [@svlandeg](https://github.com/svlandeg).
+
 ### Internal
 
 * 🔧 Update build-docs filter patterns. PR [#1080](https://github.com/fastapi/typer/pull/1080) by [@tiangolo](https://github.com/tiangolo).
