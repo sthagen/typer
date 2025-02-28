@@ -2,12 +2,30 @@
 
 ## Latest Changes
 
+## 0.15.2
+
+### Features
+
+* ✨ Allow custom styles for commands in help output. PR [#1103](https://github.com/fastapi/typer/pull/1103) by [@TheTechromancer](https://github.com/TheTechromancer).
+* ✨ Avoid the unnecessary import of `typing_extensions` in newer Python versions. PR [#1048](https://github.com/fastapi/typer/pull/1048) by [@horta](https://github.com/horta).
+
+### Fixes
+
+* 🐛 Fix shell completions for the fish shell. PR [#1069](https://github.com/fastapi/typer/pull/1069) by [@goraje](https://github.com/goraje).
+
 ### Refactors
 
 * 🚚 Rename test to corner-cases to make it more explicit. PR [#1083](https://github.com/fastapi/typer/pull/1083) by [@tiangolo](https://github.com/tiangolo).
 
+### Docs
+
+* ✏️ Fix small typos in the tutorial documentation. PR [#1137](https://github.com/fastapi/typer/pull/1137) by [@svlandeg](https://github.com/svlandeg).
+* 📝 Update optional CLI argument section in tutorial with `Annotated`. PR [#983](https://github.com/fastapi/typer/pull/983) by [@gkeuccsr](https://github.com/gkeuccsr).
+* 📝 Clarify the need for `mix_stderr` when accessing the output of `stderr` in tests. PR [#1045](https://github.com/fastapi/typer/pull/1045) by [@mrchrisadams](https://github.com/mrchrisadams).
+
 ### Internal
 
+* 🔧 Add support for Python 3.13, tests in CI and add PyPI trove classifier. PR [#1091](https://github.com/fastapi/typer/pull/1091) by [@edgarrmondragon](https://github.com/edgarrmondragon).
 * ⬆ Bump ruff from 0.9.6 to 0.9.7. PR [#1161](https://github.com/fastapi/typer/pull/1161) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#1162](https://github.com/fastapi/typer/pull/1162) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * ⬆ Bump ruff from 0.9.5 to 0.9.6. PR [#1153](https://github.com/fastapi/typer/pull/1153) by [@dependabot[bot]](https://github.com/apps/dependabot).
