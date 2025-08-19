@@ -2,6 +2,16 @@
 
 ## Latest Changes
 
+### Internal
+
+* ⬆ Update pytest-sugar requirement from <1.1.0,>=0.9.4 to >=0.9.4,<1.2.0. PR [#1279](https://github.com/fastapi/typer/pull/1279) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+## 0.16.1
+
+### Fixes
+
+* 🐛 Avoid printing additional output with `no_args_is_help=True` and Click 8.2. PR [#1278](https://github.com/fastapi/typer/pull/1278) by [@svlandeg](https://github.com/svlandeg).
+
 ### Docs
 
 * 📝 Remove duplicated line in `environment-variables.md`. PR [#1277](https://github.com/fastapi/typer/pull/1277) by [@neirzhei](https://github.com/neirzhei).
