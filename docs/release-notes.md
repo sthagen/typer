@@ -2,6 +2,38 @@
 
 ## Latest Changes
 
+## 0.19.0
+
+### Features
+
+* ✨ Support `typing.Literal` to define a set of predefined choices. PR [#429](https://github.com/fastapi/typer/pull/429) by [@blackary](https://github.com/blackary).
+* ✨ Allow setting an environment variable to `None` in `CliRunner.invoke`. PR [#1303](https://github.com/fastapi/typer/pull/1303) by [@arjenzorgdoc](https://github.com/arjenzorgdoc).
+
+### Refactors
+
+* ✅ Use Ruff rules to ensure safe lazy-loading of `rich`. PR [#1297](https://github.com/fastapi/typer/pull/1297) by [@nathanjmcdougall](https://github.com/nathanjmcdougall).
+* ✅ Avoid rich formatting in number test. PR [#1305](https://github.com/fastapi/typer/pull/1305) by [@svlandeg](https://github.com/svlandeg).
+
+### Docs
+
+* 📝 Clarify single-command vs multi-command behaviour in README. PR [#1268](https://github.com/fastapi/typer/pull/1268) by [@MorgenPronk](https://github.com/MorgenPronk).
+
+## 0.18.0
+
+### Fixes
+
+* 👽️ Ensure compatibility with Click 8.3.0 by restoring the original `value_is_missing` function. PR [#1333](https://github.com/fastapi/typer/pull/1333) by [@svlandeg](https://github.com/svlandeg).
+
+### Upgrades
+
+* 📌 Remove pin for Click < 8.3.0 now that there's a fix for the changes. PR [#1346](https://github.com/fastapi/typer/pull/1346) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.17.5
+
+### Fixes
+
+* ⬇️ Restrict Click to below 8.3.0 to handle changes in the new version. PR [#1336](https://github.com/fastapi/typer/pull/1336) by [@svlandeg](https://github.com/svlandeg).
+
 ### Internal
 
 * ⬆ Bump mkdocs-material from 9.6.14 to 9.6.20. PR [#1308](https://github.com/fastapi/typer/pull/1308) by [@dependabot[bot]](https://github.com/apps/dependabot).
