@@ -4,6 +4,11 @@
 
 ### Internal
 
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#1394](https://github.com/fastapi/typer/pull/1394) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump ruff from 0.14.1 to 0.14.2. PR [#1383](https://github.com/fastapi/typer/pull/1383) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/upload-artifact from 4 to 5. PR [#1388](https://github.com/fastapi/typer/pull/1388) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-macros-plugin from 1.4.0 to 1.4.1. PR [#1389](https://github.com/fastapi/typer/pull/1389) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/download-artifact from 5 to 6. PR [#1391](https://github.com/fastapi/typer/pull/1391) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 🔧 Add PEP-639 license metadata. PR [#1387](https://github.com/fastapi/typer/pull/1387) by [@svlandeg](https://github.com/svlandeg).
 * ⬆ Bump mypy from 1.11.2 to 1.14.1. PR [#1375](https://github.com/fastapi/typer/pull/1375) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#1380](https://github.com/fastapi/typer/pull/1380) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
