@@ -4,6 +4,14 @@
 
 ### Internal
 
+* ⬆ Bump mypy from 1.18.2 to 1.19.1. PR [#1469](https://github.com/fastapi/typer/pull/1469) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/checkout from 5 to 6. PR [#1456](https://github.com/fastapi/typer/pull/1456) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/download-artifact from 6 to 7. PR [#1444](https://github.com/fastapi/typer/pull/1444) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.14.8 to 0.14.10. PR [#1449](https://github.com/fastapi/typer/pull/1449) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.7.0 to 9.7.1. PR [#1446](https://github.com/fastapi/typer/pull/1446) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/upload-artifact from 5 to 6. PR [#1443](https://github.com/fastapi/typer/pull/1443) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/cache from 4 to 5. PR [#1441](https://github.com/fastapi/typer/pull/1441) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Update secrets check. PR [#1471](https://github.com/fastapi/typer/pull/1471) by [@YuriiMotov](https://github.com/YuriiMotov).
 * ✅ Add missing tests for code examples. PR [#1465](https://github.com/fastapi/typer/pull/1465) by [@YuriiMotov](https://github.com/YuriiMotov).
 * 🔧 Update pre-commit to use local Ruff instead of hook, unpin `prek`. PR [#1466](https://github.com/fastapi/typer/pull/1466) by [@YuriiMotov](https://github.com/YuriiMotov).
 * ⬆ Bump mypy from 1.14.1 to 1.18.2. PR [#1382](https://github.com/fastapi/typer/pull/1382) by [@dependabot[bot]](https://github.com/apps/dependabot).
