@@ -2,6 +2,16 @@
 
 ## Latest Changes
 
+### Internal
+
+* ⬆ Bump ruff from 0.15.0 to 0.15.1. PR [#1541](https://github.com/fastapi/typer/pull/1541) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+## 0.23.1
+
+### Fixes
+
+* 🐛 Fix `TYPER_USE_RICH` parsing to allow disabling Rich completely. PR [#1539](https://github.com/fastapi/typer/pull/1539) by [@bckohan](https://github.com/bckohan).
+
 ### Docs
 
 * 📝 Remove documentation pages that reference using Click directly. PR [#1538](https://github.com/fastapi/typer/pull/1538) by [@svlandeg](https://github.com/svlandeg).
