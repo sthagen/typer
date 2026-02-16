@@ -2,8 +2,16 @@
 
 ## Latest Changes
 
+## 0.23.2
+
+### Features
+
+* ✅ Monkeypatch console width to allow running `pytest` directly. PR [#1542](https://github.com/fastapi/typer/pull/1542) by [@SwaatiR](https://github.com/SwaatiR).
+
 ### Internal
 
+* 👷 Run tests with lower bound uv sync, update minimum dependencies. PR [#1526](https://github.com/fastapi/typer/pull/1526) by [@YuriiMotov](https://github.com/YuriiMotov).
+* ⬆ Bump prek from 0.3.2 to 0.3.3. PR [#1545](https://github.com/fastapi/typer/pull/1545) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump ruff from 0.15.0 to 0.15.1. PR [#1541](https://github.com/fastapi/typer/pull/1541) by [@dependabot[bot]](https://github.com/apps/dependabot).
 
 ## 0.23.1
