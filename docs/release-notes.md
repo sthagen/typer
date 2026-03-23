@@ -8,6 +8,7 @@
 
 ### Docs
 
+* 💄 Fix code blocks in reference docs overflowing table width. PR [#1630](https://github.com/fastapi/typer/pull/1630) by [@YuriiMotov](https://github.com/YuriiMotov).
 * 📝 Fix broken link to FastAPI and Friends newsletter. PR [#1540](https://github.com/fastapi/typer/pull/1540) by [@Karlemami](https://github.com/Karlemami).
 * 🔨 Handle external links `target=_blank` and CSS automatically in JS and CSS. PR [#1622](https://github.com/fastapi/typer/pull/1622) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Remove link to Typer developer survey. PR [#1609](https://github.com/fastapi/typer/pull/1609) by [@svlandeg](https://github.com/svlandeg).
@@ -15,6 +16,12 @@
 
 ### Internal
 
+* ⬆ Bump prek from 0.3.6 to 0.3.8. PR [#1648](https://github.com/fastapi/typer/pull/1648) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pytest-cov from 7.0.0 to 7.1.0. PR [#1649](https://github.com/fastapi/typer/pull/1649) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pygithub from 2.8.1 to 2.9.0. PR [#1650](https://github.com/fastapi/typer/pull/1650) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.7.5 to 9.7.6. PR [#1645](https://github.com/fastapi/typer/pull/1645) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.6 to 0.15.7. PR [#1644](https://github.com/fastapi/typer/pull/1644) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.23 to 0.0.24. PR [#1646](https://github.com/fastapi/typer/pull/1646) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump prek from 0.3.5 to 0.3.6. PR [#1638](https://github.com/fastapi/typer/pull/1638) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump ty from 0.0.22 to 0.0.23. PR [#1639](https://github.com/fastapi/typer/pull/1639) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pyjwt from 2.10.1 to 2.12.0. PR [#1636](https://github.com/fastapi/typer/pull/1636) by [@dependabot[bot]](https://github.com/apps/dependabot).
