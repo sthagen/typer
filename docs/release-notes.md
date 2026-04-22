@@ -2,6 +2,12 @@
 
 ## Latest Changes
 
+## 0.24.2 (2026-04-22)
+
+### Fixes
+
+* 🐛 Ensure that `typer.launch` forwards correctly when launching a file. PR [#1708](https://github.com/fastapi/typer/pull/1708) by [@svlandeg](https://github.com/svlandeg).
+
 ### Refactors
 
 * 🎨 Ensure `ty` runs without errors. PR [#1628](https://github.com/fastapi/typer/pull/1628) by [@svlandeg](https://github.com/svlandeg).
@@ -17,6 +23,8 @@
 
 ### Internal
 
+* ⬆ Bump mypy from 1.20.1 to 1.20.2. PR [#1715](https://github.com/fastapi/typer/pull/1715) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.9 to 0.3.10. PR [#1716](https://github.com/fastapi/typer/pull/1716) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pydantic-settings from 2.13.1 to 2.14.0. PR [#1713](https://github.com/fastapi/typer/pull/1713) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump ty from 0.0.31 to 0.0.32. PR [#1711](https://github.com/fastapi/typer/pull/1711) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pydantic from 2.13.2 to 2.13.3. PR [#1712](https://github.com/fastapi/typer/pull/1712) by [@dependabot[bot]](https://github.com/apps/dependabot).
