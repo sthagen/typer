@@ -2,18 +2,42 @@
 
 ## Latest Changes
 
-### Upgrades
+## 0.26.1 (2026-05-26)
 
-* 📌 Pin max version of Click to `>= 8.2.1, < 8.4` temporarily to prevent incompatibilities. PR [#1753](https://github.com/fastapi/typer/pull/1753) by [@tiangolo](https://github.com/tiangolo).
+### Fixes
+
+* 🐛 Ensure that an envvar set for `typer.Option` works as expected. PR [#1788](https://github.com/fastapi/typer/pull/1788) by [@svlandeg](https://github.com/svlandeg).
+
+### Internal
+
+* ⬆ Bump python-dotenv from 1.2.1 to 1.2.2. PR [#1714](https://github.com/fastapi/typer/pull/1714) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+## 0.26.0 (2026-05-26)
+
+### Breaking Changes
+
+* ➖ Vendor Click and streamline Typer's functionality and code base. PR [#1774](https://github.com/fastapi/typer/pull/1774) by [@svlandeg](https://github.com/svlandeg).
+    * Typer no longer depends on Click as a third party dependency, it vendors (includes the source code of) Click.
+    * This simplifies the work done by both Click and Typer teams.
+    * It allows Typer to evolve independently, and enables several new planned features.
+    * It will solve several dependency conflict situations for projects that use some packages that depend on Click and some that depend on Typer.
+    * This also means that Click-specific functionality is no longer supported, like extracting the Click app and adding Click-specific plug-ins, or customizing the field types with Click-specific types.
+    * You can read more about it in the docs for [Vendored Click](https://typer.tiangolo.com/tutorial/click/).
 
 ### Docs
 
+* 📝 Update and simplify docs about help and management. PR [#1778](https://github.com/fastapi/typer/pull/1778) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Update contributing docs, reference central docs. PR [#1777](https://github.com/fastapi/typer/pull/1777) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update security policy. PR [#1775](https://github.com/fastapi/typer/pull/1775) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update link syntax to minimal Markdown. PR [#1623](https://github.com/fastapi/typer/pull/1623) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update and simplify usage of admonitions. PR [#1755](https://github.com/fastapi/typer/pull/1755) by [@tiangolo](https://github.com/tiangolo).
 
 ### Internal
 
+* 📌 Pin max version of Click to `>= 8.2.1, < 8.4` temporarily to prevent incompatibilities. PR [#1753](https://github.com/fastapi/typer/pull/1753) by [@tiangolo](https://github.com/tiangolo).
+    * Superseded by vendoring Click.
+* 👷 Configure Dependabot to group updates and update weekly. PR [#1768](https://github.com/fastapi/typer/pull/1768) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 🔥 Remove config files now in central GitHub repo. PR [#1780](https://github.com/fastapi/typer/pull/1780) by [@tiangolo](https://github.com/tiangolo).
 * ⬆ Bump idna from 3.11 to 3.15. PR [#1771](https://github.com/fastapi/typer/pull/1771) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pymdown-extensions from 10.21.2 to 10.21.3. PR [#1772](https://github.com/fastapi/typer/pull/1772) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 📝 Fix categorization of PR 1475 in release notes. PR [#1769](https://github.com/fastapi/typer/pull/1769) by [@svlandeg](https://github.com/svlandeg).
