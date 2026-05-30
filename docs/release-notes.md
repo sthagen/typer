@@ -4,6 +4,21 @@
 
 ### Internal
 
+* 🔥 Remove old stub packages. PR [#1810](https://github.com/fastapi/typer/pull/1810) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.26.4 (2026-05-30)
+
+### Features
+
+* 📝 Update AI Library Skill to avoid verbose code for CLI Options. PR [#1808](https://github.com/fastapi/typer/pull/1808) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* 👷 Add CI to create draft release after merging a `release` PR. PR [#1807](https://github.com/fastapi/typer/pull/1807) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update labeler to accept label `release`. PR [#1806](https://github.com/fastapi/typer/pull/1806) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update GitHub Action permissions for prepare-release. PR [#1804](https://github.com/fastapi/typer/pull/1804) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Add GitHub Actions prepare release workflow. PR [#1802](https://github.com/fastapi/typer/pull/1802) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update publish action, do not use uv cache. PR [#1803](https://github.com/fastapi/typer/pull/1803) by [@tiangolo](https://github.com/tiangolo).
 * ⬆ Bump the python-packages group across 1 directory with 5 updates. PR [#1793](https://github.com/fastapi/typer/pull/1793) by [@dependabot[bot]](https://github.com/apps/dependabot).
 
 ## 0.26.3 (2026-05-28)
