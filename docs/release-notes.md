@@ -2,6 +2,28 @@
 
 ## Latest Changes
 
+## 0.26.7 (2026-06-03)
+
+### Fixes
+
+* 🐛 Respect wait=False when launching URLs with xdg-open. PR [#1820](https://github.com/fastapi/typer/pull/1820) by [@patrick91](https://github.com/patrick91).
+
+## 0.26.6 (2026-06-02)
+
+### Fixes
+
+* 🐛 Ensure that the default of a list argument is used correctly. PR [#1821](https://github.com/fastapi/typer/pull/1821) by [@svlandeg](https://github.com/svlandeg).
+
+### Internal
+
+* 👷 Speed up the CI by shuffling the test matrix. PR [#1815](https://github.com/fastapi/typer/pull/1815) by [@svlandeg](https://github.com/svlandeg).
+
+## 0.26.5 (2026-06-01)
+
+### Fixes
+
+* 🐛 Ensure that hidden commands are not shown when Rich markup is disabled. PR [#1812](https://github.com/fastapi/typer/pull/1812) by [@svlandeg](https://github.com/svlandeg).
+
 ### Internal
 
 * 🔥 Remove old stub packages. PR [#1810](https://github.com/fastapi/typer/pull/1810) by [@tiangolo](https://github.com/tiangolo).
