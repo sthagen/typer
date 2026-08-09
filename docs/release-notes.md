@@ -4,10 +4,36 @@
 
 ### Docs
 
+* 🐛 Fix showing `fast` button as external link in animated terminals in docs. PR [#1912](https://github.com/fastapi/typer/pull/1912) by [@phalberg](https://github.com/phalberg).
+
+### Internal
+
+* 🔐 Use PR Submit for pull requests. PR [#1928](https://github.com/fastapi/typer/pull/1928) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Use GitHub CLI for Git authentication. PR [#1927](https://github.com/fastapi/typer/pull/1927) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Use PR Push commit identity. PR [#1926](https://github.com/fastapi/typer/pull/1926) by [@tiangolo](https://github.com/tiangolo).
+* 🔒 Replace pre-commit PAT with PR Push. PR [#1923](https://github.com/fastapi/typer/pull/1923) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Remove Zensical docs cache. PR [#1922](https://github.com/fastapi/typer/pull/1922) by [@tiangolo](https://github.com/tiangolo).
+* 🔥 Remove the old Latest Changes workflow. PR [#1921](https://github.com/fastapi/typer/pull/1921) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump the python-packages group with 6 updates. PR [#1917](https://github.com/fastapi/typer/pull/1917) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pymdown-extensions from 10.21.3 to 11.0. PR [#1910](https://github.com/fastapi/typer/pull/1910) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump the github-actions group with 5 updates. PR [#1916](https://github.com/fastapi/typer/pull/1916) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+## 0.27.1 (2026-08-03)
+
+### Features
+
+* ✨ Make `epilog` formatting consistent with other parts of the help string. PR [#1405](https://github.com/fastapi/typer/pull/1405) by [@svlandeg](https://github.com/svlandeg).
+
+### Docs
+
 * 📝 Add Library Skills documentation. PR [#1906](https://github.com/fastapi/typer/pull/1906) by [@tiangolo](https://github.com/tiangolo).
 * 🐛 Prevent scroll-to-top on restart/fast buttons in the documentation. PR [#1904](https://github.com/fastapi/typer/pull/1904) by [@phalberg](https://github.com/phalberg).
 * 📝 Recommend uv projects by default in docs. PR [#1903](https://github.com/fastapi/typer/pull/1903) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update help docs. PR [#1902](https://github.com/fastapi/typer/pull/1902) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* ⬆️ Upgrade latest-changes to 0.7.1. PR [#1909](https://github.com/fastapi/typer/pull/1909) by [@tiangolo](https://github.com/tiangolo).
 
 ## 0.27.0 (2026-07-15)
 
